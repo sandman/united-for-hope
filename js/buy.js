@@ -50,7 +50,14 @@ $(document).ready(function() {
 		}
 
 		// Validate other form elements, if needed!
-		
+		var email = $('.emailAddress').val();
+        
+        // Validate the Email:
+		if (!Stripe.validateExpiry(expMonth, expYear)) {
+			error = true;
+			reportError('The expiration date appears to be invalid.');
+		}
+        
 		// Check for errors:
 		if (!error) {
 			
