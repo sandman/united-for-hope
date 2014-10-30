@@ -237,7 +237,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                             <div class="col-xs-2"><img class="img-responsive" src="img/light.svg">
                                             </div>
                                             <div class="col-xs-6">
-                                                <h4 class="product-name"><strong>GIFT WATER</strong></h4><h4><small>50 Euros buys seeds and plants and pays a gardener’s salary to grow fresh produce for new mothers and the elderly.</small></h4>
+                                                <h4 class="product-name"><strong>GIFT HEALTH</strong></h4><h4><small>50 Euros buys seeds and plants and pays a gardener’s salary to grow fresh produce for new mothers and the elderly.</small></h4>
                                             </div>
                                             <div class="col-xs-4">
                                                 <div class="col-xs-6 text-right">
