@@ -160,9 +160,22 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <div class='row'>
         <div class='col-md-3'></div>
         <div class='col-md-6'>
-
+            <div class="container"> 
+            <div class="row" style="padding-top:50px">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
+                    <div class="list-group list-group-horizontal">
+                        <a href="#" class="list-group-item">GIFT LIGHT</a>
+                        <a href="#" class="list-group-item">GIFT WATER</a>
+                        <a href="#" class="list-group-item">GIFT HEALTH</a>
+                        <a href="#" class="list-group-item">GIFT A FUTURE</a>
+                        <a href="#" class="list-group-item">GIFT DIGNITY</a>
+                    </div>
+                </div>
+            </div>
+            </div>
             <div class="row" style="padding-top:20px">
                 <form accept-charset="UTF-8" action="buy.php" class="require-validation" data-cc-on-file="false" data-stripe-publishable-key="pk_test_IOwaVhL2sF2ND7UlFJw6ISeu" id="payment-form" method="POST">
+                <input name="amount" type="hidden" value=10 />
                 <div style="margin:0;padding:0;display:inline">
                 <?php // Show PHP errors, if they exist:
                     if (isset($errors) && !empty($errors) && is_array($errors)) {
@@ -174,140 +187,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     }?>
                   <div id="payment-errors"></div>
                   <div style="margin:0;padding:0;display:inline">
-                   <!--
-                    <div class="form-row">
-                        <div class='col-xs-4 col-md-4 form-group required text-center'>
-                            <div class="list-group list-group-vertical">
-                                <a class="list-group-item">GIFT LIGHT</a>
-                                <a class="list-group-item">GIFT WATER</a>
-                                <a class="list-group-item">GIFT HEALTH</a>
-                                <a class="list-group-item">GIFT A FUTURE</a>
-                                <a class="list-group-item">GIFT DIGNITY</a>
-                                <a class="list-group-item">OTHER AMOUNT</a>
-                            </div>
-                        </div>
-                    </div>
-                    -->
-                        <div class="form-row">
-                            <div class="col-xs-12">
-                                <div class="panel panel-info">
-                                    <div class="panel-heading">
-                                        <div class="panel-title">
-                                            <div class="row">
-                                                <div class="col-xs-6">
-                                                    <h5><span class="glyphicon glyphicon-shopping-cart"></span>The GIFT HOPE Shopping List</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="panel-body">
-                                        <div class="row">
-                                            <div class="col-xs-2"><img class="img-responsive" src="img/light.svg">
-                                            </div>
-                                            <div class="col-xs-6">
-                                                <h4 class="product-name"><strong>GIFT LIGHT</strong></h4><h4><small>10 Euros buys a solar lamp to give one family safe, sustainable and affordable light for a year.</small></h4>
-                                            </div>
-                                            <div class="col-xs-4">
-                                                <div class="col-xs-6 text-right">
-                                                    <h6><strong>&#8364; 10 <span class="text-muted">x</span></strong></h6>
-                                                </div>
-                                                <div class="col-xs-6">
-                                                    <input type="text" class="form-control input-sm" value="1">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <hr>
-                                        <div class="row">
-                                            <div class="col-xs-2"><img class="img-responsive" src="img/light.svg">
-                                            </div>
-                                            <div class="col-xs-6">
-                                                <h4 class="product-name"><strong>GIFT WATER</strong></h4><h4><small>25 Euros will buy a family of 6 clean drinking water (and better health) for one year.</small></h4>
-                                            </div>
-                                            <div class="col-xs-4">
-                                                <div class="col-xs-6 text-right">
-                                                    <h6><strong>&#8364; 25 <span class="text-muted">x</span></strong></h6>
-                                                </div>
-                                                <div class="col-xs-6">
-                                                    <input type="text" class="form-control input-sm" value="1">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <hr>
-                                        <div class="row">
-                                            <div class="col-xs-2"><img class="img-responsive" src="img/light.svg">
-                                            </div>
-                                            <div class="col-xs-6">
-                                                <h4 class="product-name"><strong>GIFT HEALTH</strong></h4><h4><small>50 Euros buys seeds and plants and pays a gardener’s salary to grow fresh produce for new mothers and the elderly.</small></h4>
-                                            </div>
-                                            <div class="col-xs-4">
-                                                <div class="col-xs-6 text-right">
-                                                    <h6><strong>&#8364; 50 <span class="text-muted">x</span></strong></h6>
-                                                </div>
-                                                <div class="col-xs-6">
-                                                    <input type="text" class="form-control input-sm" value="1">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <hr>
-                                        <div class="row">
-                                            <div class="col-xs-2"><img class="img-responsive" src="img/light.svg">
-                                            </div>
-                                            <div class="col-xs-6">
-                                                <h4 class="product-name"><strong>GIFT A FUTURE</strong></h4><h4><small>100 Euros will pay a teacher for one month to teach a whole village and give them better prospects.</small></h4>
-                                            </div>
-                                            <div class="col-xs-4">
-                                                <div class="col-xs-6 text-right">
-                                                    <h6><strong>&#8364; 100 <span class="text-muted">x</span></strong></h6>
-                                                </div>
-                                                <div class="col-xs-6">
-                                                    <input type="text" class="form-control input-sm" value="1">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <hr>
-                                        <div class="row">
-                                            <div class="col-xs-2"><img class="img-responsive" src="img/light.svg">
-                                            </div>
-                                            <div class="col-xs-6">
-                                                <h4 class="product-name"><strong>GIFT DIGNITY</strong></h4><h4><small>200 Euros will build a toilet for a family, improving sanitation, giving privacy and safety especially for women and girls.</small></h4>
-                                            </div>
-                                            <div class="col-xs-4">
-                                                <div class="col-xs-6 text-right">
-                                                    <h6><strong>&#8364; 100 <span class="text-muted">x</span></strong></h6>
-                                                </div>
-                                                <div class="col-xs-6">
-                                                    <input type="text" class="form-control input-sm" value="1">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="text-center">
-                                                <div class="col-xs-9">
-                                                    <h6 class="text-right">Added items?</h6>
-                                                </div>
-                                                <div class="col-xs-3">
-                                                    <button type="button" class="btn btn-default btn-sm btn-block">
-                                                        Update cart
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="panel-footer">
-                                        <div class="row text-center">
-                                            <div class="col-xs-9">
-                                                <h4 class="text-right">Total <strong>$50.00</strong></h4>
-                                            </div>
-                                            <div class="col-xs-3">
-                                                <button type="button" class="btn btn-success btn-block">
-                                                    Checkout
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
                     <div class='form-row'>
                       <div class='col-xs-12 form-group required'>
                         <label class='control-label'>Full Name</label>
@@ -604,6 +484,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                 <option value="ZW">Zimbabwe</option>
                             </select>
                         </div>
+                    </div>
                     <div class='form-row'>
                       <div class='col-xs-12 form-group card required'>
                         <label class='control-label'>Card Number</label>
@@ -628,13 +509,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                       <div class='col-md-12'>
                         <div class='form-control total btn btn-info'>
                           Total:
-                          <span class='amount'>EUR 10</span>
+                          <span class='amount'>EUR </span>
                         </div>
                       </div>
                     </div>
                     <div class='form-row'>
                       <div class='col-md-12 form-group'>
-                        <button class='form-control btn btn-primary submit-button' type='submit'>Pay »</button>
+                        <button class='form-control btn btn-primary submit-button' id='gift' type='submit'>GIFT »</button>
                       </div>
                     </div>
                     <div class='form-row'>
